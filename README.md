@@ -2,11 +2,10 @@
 
 Docker running Nginx, PHP-FPM, MySQL and PHPMyAdmin.
 
+# Setting up docker on Windows 10
 
-# Setting up docker on Windows 10
 
-
-## Installing docker
+## Installing docker
 
 Go to:
 
@@ -24,7 +23,7 @@ Because we want to use linux containers.
 When installation is done, it will ask to restart your computer.
 
 
-## Configuring docker
+## Configuring docker
 
 Start docker desktop. You will have a notification saying:
 
@@ -39,7 +38,7 @@ Right click the docker icon (close to the clock on the bottom right) and click o
 Go to “Resources” -> “File Sharing” and enable the disks you want to share with docker (C), then press "Apply & Restart"
 
 
-## Extra step (only if you didn't create a dockerhub account)
+## Extra step (only if you didn't create a dockerhub account)
 
 If you didn't create an account in dockerhub, there is an extra step.
 
@@ -60,7 +59,7 @@ So the full file becomes only:
 Save the file and now you are ready!
 
 
-# Running the nginx+php+mysql stack
+# Running the nginx+php+mysql stack
 
 Download a zip from (or clone):
 
@@ -85,7 +84,7 @@ To change the PHP files, the equivalent of the `www` folder is the `web/public/`
 When connecting to mysql from PHP, remember that mysql is running in a separate container, so it’s not “localhost”. The mysql hostname for the connection is defined on the `.env` file in the project folder (`MYSQL_HOST`).
 
 
-# Using docker
+# Using docker
 
 Whenever you want to check which containers are running, just run from powershell, as an admin:
 `docker ps`
@@ -118,7 +117,7 @@ To remove a container (after stopping it):
 `docker rm 8262bf671d8f`
 
 
-## Starting and stopping
+## Starting and stopping
 
 To start the containers again, run the following command from the project folder:  
 `docker-compose up -d`
