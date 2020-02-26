@@ -1,3 +1,6 @@
+# Nginx PHP MySQL
+
+Docker running Nginx, PHP-FPM, MySQL and PHPMyAdmin.
 
 # Setting up docker on Windows 10
 
