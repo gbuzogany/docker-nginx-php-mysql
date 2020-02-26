@@ -67,7 +67,7 @@ Open power shell as an administrator, go to the folder you just extracted and ru
 It will download everything it needs and start it when it's ready. The first time it starts may take some time.
 If the Windows firewall asks for permission for docker, make sure you authorise.
 
-[http://localhost:8000/](http://localhost:8000/) -> Your PHP website
+[http://localhost:8000/](http://localhost:8000/) -> Your PHP website  
 [http://localhost:8080/](http://localhost:8000/) -> PHPMyAdmin
 
 It should also work from the local network.
@@ -94,27 +94,27 @@ c696b69eeca2        mysql:5.7.22               "docker-entrypoint.s…"   33 hou
 
 You can handle the containers either by the `CONTAINER ID` or `NAME`.
 
-To stop a container:
-`docker stop 8262bf671d8f`
-is equivalent to:
+To stop a container:  
+`docker stop 8262bf671d8f`  
+The command has the same effect as:  
 `docker stop docker-nginx-php-mysql-master_web_1`
 
-To restart a container:
+To restart a container:  
 `docker restart 8262bf671d8f`
 
-To list all containers (even stopped ones):
+To list all containers (even stopped ones):  
 `docker ps -a`
 
-To remove a container (after stopping it):
+To remove a container (after stopping it):  
 `docker rm 8262bf671d8f`
 
 ## Starting and stopping
-To start the containers again, run the following command from the project folder:
+To start the containers again, run the following command from the project folder:  
 `docker-compose up -d`
 
-To stop the containers:
+To stop the containers:  
 `docker-compose stop`
 
-To destroy the containers:
+To destroy the containers:  
 `docker-compose down`
 
